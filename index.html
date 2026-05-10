@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por su compra! | Supermercado El Económico</title>
+    <style>
+        /* --- ESTILOS CSS PROFESIONALES --- */
+
+        /* 1. Reinicio suave y fuente base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Asegura que los paddings no afecten el ancho */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía limpia y moderna */
+        }
+
+        /* 2. Fondo con degradado suave */
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 3. Tarjeta principal de agradecimiento */
+        .card {
+            background: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente */
+            backdrop-filter: blur(10px); /* Efecto de desenfoque elegante detrás de la tarjeta */
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Sombra suave para dar profundidad */
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            animation: fadeInUp 0.8s ease-out; /* Animación de entrada */
+        }
+
+        /* 4. Logo o ícono decorativo */
+        .logo-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        /* 5. Título principal */
+        h1 {
+            font-size: 2.5rem; /* Tamaño grande y legible */
+            color: #2c3e50; /* Azul oscuro elegante */
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* 6. Mensaje secundario */
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        /* 7. Resaltar el nombre del negocio */
+        .brand-name {
+            color: #e67e22; /* Naranja vibrante, color de oferta/confianza */
+            font-weight: bold;
+        }
+
+        /* 8. Divisor decorativo */
+        .divider {
+            width: 60px;
+            height: 4px;
+            background-color: #e67e22;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        /* 9. Mapa o información de contacto */
+        .info-footer {
+            font-size: 0.95rem;
+            color: #888;
+            margin-top: 30px;
+        }
+
+        /* 10. Animación para que la tarjeta aparezca suavemente */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px); /* Sube mientras aparece */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Icono decorativo de check o regalo -->
+        <div class="logo-icon">✅</div>
+        
+        <!-- Contenido principal -->
+        <h1>¡Gracias por su compra!</h1>
+        <p>Su factura ha sido procesada con éxito.</p>
+        
+        <!-- Línea divisoria decorativa -->
+        <div class="divider"></div>
+
+        <!-- Mensaje de fidelización -->
+        <p>
+            En <span class="brand-name">Supermercado El Económico</span><br>
+            valoramos su preferencia.
+        </p>
+        
+        <!-- Pie de página informativo -->
+        <div class="info-footer">
+            📍 Bávaro-Punta Cana, RD &nbsp;|&nbsp; 📞 809-987-0000
+        </div>
+    </div>
+
+</body>
+</html>
